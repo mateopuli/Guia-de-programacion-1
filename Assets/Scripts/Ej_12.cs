@@ -18,7 +18,35 @@ public class Ej_12 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        int cantseis = 0;
+        if (dado1 == 6)
+        {
+            cantseis++;
+        }
+        if (dado2 == 6)
+        {
+            cantseis++;
+        }
+        if (dado3 == 6)
+        {
+            cantseis++;
+        }
+        switch (cantseis)
+        {
+            case 3:
+                Debug.Log("Excelente");
+                break;
+            case 2:
+                Debug.Log("Muy Bien");
+                break;
+            case 1:
+                Debug.Log("Regular");
+                break;
+            case 0:
+                Debug.Log("Insuficiente");
+                break;
+        }
+
     }
 
     // Update is called once per frame
