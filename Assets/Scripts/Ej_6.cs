@@ -7,10 +7,23 @@ using UnityEngine;
 
 public class Ej_6 : MonoBehaviour
 {
+    public int num1;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (num1 > 0)
+        {
+            if (num1 % 2 == 0)
+            {
+                Debug.Log("El numero ingresado es par");
+            }
+            else
+            {
+                Debug.Log("El numero ingresado es impar");
+            }
+        }
+
+
     }
 
     // Update is called once per frame
